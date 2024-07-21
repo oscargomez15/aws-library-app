@@ -1,38 +1,175 @@
-.App {
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+button{
+  border: none;
+  padding: 1rem 2rem;
+  font-weight: bold;
+}
+
+body{
+  background-color: black;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
+  gap: 1rem;
+  width: 25%;
+  transition: all .2s ease-in-out;
+}
+
+form h2{
+  position: relative;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.input-group{
+  display: flex;
+  flex-direction: column;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.input-group label{
+  padding-top: 0.2rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* form .input-group:nth-child(3){
+  padding-bottom: 1rem;
+} */
+
+.input-group input{
+  border: none;
+  outline: none;
+  padding: .3rem;
+  font-size: 1.2rem;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+}
+
+.App{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  margin: auto;
+  height: 100vh;
+  color: white;
+}
+
+.page-heading{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin: 2rem 0;
+}
+
+nav {
+  width: 100%;
+}
+
+.nav-list{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  background: rgb(37, 37, 37);
+  height: 100%;
+  border-radius: 10px;
+  padding: 0.5rem;
+}
+
+.nav-list a{
+  text-decoration: none;
+}
+
+.nav-list li{
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  margin-right: 2rem;
+  height: 100%;
+  padding: .5rem 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all .2s ease;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-list li:hover{
+  background-color: rgba(199, 0, 0, 0.4);
+  color: rgb(224, 0, 0);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.lottie-anim{
+  display: block;
+  height: 300px;
+  width: 100%;
+}
+
+.lottie-btn{
+  height: 100%;
+}
+
+.book-container{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+  gap: 1rem;
+  justify-content: center;
+  flex: 1;
+}
+
+.book-item{
+  background-color: rgb(71, 71, 71);
+  border-radius: 10px;
+  padding: 1rem;
+  flex-basis: 25%;
+}
+
+.book-heading{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.book-item h3{
+  font-weight: normal;
+}
+
+.add-btn{
+  background-color: rgb(209, 0, 0);
+  color: white;
+  transition: all .2s ease;
+  width: fit-content;
+}
+
+.add-btn:hover{
+  cursor: pointer;
+  background-color: rgb(148, 1, 1);
+}
+
+.success-message{
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  color: rgb(73, 255, 73);
+}
+
+.loading-btn{
+  max-height: 50px;
+}
+
+.loading-btn svg{
+  height: 20px;
+}
+
+.btn-text{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
