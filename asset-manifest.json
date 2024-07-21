@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/aws-library-app/static/css/main.cc9b457c.css",
+    "main.js": "/aws-library-app/static/js/main.38cae3c9.js",
+    "index.html": "/aws-library-app/index.html",
+    "main.cc9b457c.css.map": "/aws-library-app/static/css/main.cc9b457c.css.map",
+    "main.38cae3c9.js.map": "/aws-library-app/static/js/main.38cae3c9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cc9b457c.css",
+    "static/js/main.38cae3c9.js"
+  ]
+}
