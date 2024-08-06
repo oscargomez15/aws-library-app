@@ -25,3 +25,6 @@ In this app you can View all the Books, Find a book, add, delete and update a de
 >To Update a book we would need the Identifier, Book Name to change it to and the Author to change it to.
 
 In this project you can find a folder named "diagram" in which you can find a diagram showing how AWS services are making the magic behind the scenes.
+
+Also, there is a lambda-code folder where the lambda code is stored. 
+In this project there were 4 different lambda codes being used meaning there are 4 different node.js files.
